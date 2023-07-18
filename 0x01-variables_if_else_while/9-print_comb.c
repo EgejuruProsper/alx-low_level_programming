@@ -1,24 +1,25 @@
 #include <stdio.h>
+
 /**
  * main - print numbers separated by commas and spaces
  *
  * Return: (0)
- *
  */
 int main(void)
 {
-	char numbers = '0';
+	int numbers;
 
-	while (numbers <= '9')
+	for (numbers = '0'; numbers <= '9'; numbers++)
 	{
 		putchar(numbers);
+
 		if (numbers != '9')
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		numbers++;
 	}
+
 	putchar('\n');
 	return (0);
 }
