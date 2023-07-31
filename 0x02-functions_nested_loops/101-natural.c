@@ -6,17 +6,13 @@
  */
 int main(void)
 {
-	int sum = 0;
+	int i, sum = 0;
 
-	for (int i = 0; i < 1024; i++)
+	for (i = 0; i < 1024; i++)
 	{
-		if (i % 3 == 0 || i % 5 == 0) 
-		{
+		if ((i % 5 == 0) || (i % 3 == 0))
 			sum += i;
-		}
 	}
-
 	printf("%d\n", sum);
-
 	return (0);
 }
