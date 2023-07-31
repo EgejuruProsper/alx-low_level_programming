@@ -1,6 +1,10 @@
 #include <stdio.h>
-
-int main()
+/**
+ * main - Entry point
+ *
+ * Return: (0)
+ */
+int main(void)
 {
 	int sum = 0;
 
